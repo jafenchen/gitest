@@ -1,0 +1,455 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport"	content="width=device-width, initial-scale=1, maximum-scale=1">
+</meta>
+<meta http-equiv="pragma" content="no-cache">
+</meta>
+<meta http-equiv="cache-control" content="no-cache,no-store">
+</meta>
+<meta http-equiv="expires" content="0">
+</meta>
+<title></title>
+<style type="text/css">
+html {
+	width: 100%
+}
+body {
+	font-family: sans-serif;
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+.field {
+	float: left;
+}
+.r_section {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.r_table {
+	font-size: 12px;
+	border: none;
+	border-collapse: collapse;
+	line-height: 36px;
+}
+.r_d_table {
+	font-size: 12px;
+	border: none;
+	border-collapse: collapse;
+	border: 0.25px solid #cccccc;
+}
+.r_thead {
+	background-color: #cccccc;
+}
+.r_thead_tr {
+	line-height: 36px;
+}
+.r_thead_th {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 4px;
+}
+.r_table_tr {
+	line-height: 20px;
+}
+.r_table_td {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 4px;
+}
+label {
+	font-weight: bold;
+}
+.fieldLbl {
+	font-weight: bold;
+	display: inline-block;
+	width: 120px;
+	padding-right: 8px;
+}
+.t_i_tabel {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	font-size: 12px;
+}
+.tr_amt_val {
+	width: 120px;
+	padding-right: 20px;
+}/* report */
+.r_layout_table {
+	border-spacing: 0;
+}
+.r_layout_td_stmt {
+	width: 250px;
+	padding: 0;
+	margin: 0;
+}
+.r_layout_td_stmt_data {
+	width: 200px;
+	padding: 0;
+	margin: 0;
+}
+.r_layout_td_stmt_cash_flows {
+	width: 280px;
+	padding: 0;
+	margin: 0;
+}/*.report_stmt_col {	float: left;	height: auto;	padding: 0;	margin: 0;}.report_col {	float: left;	height: auto;	padding: 0;	margin: 0;}*/
+.report_stmt_col {
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+.report_col {
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+.report_stmt_col_table {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border-collapse : collapse;
+}
+.report_col_table {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border-collapse : collapse;
+}
+.report_stmt_col_tr {
+	padding: 0;
+	margin: 0;
+}
+.report_col_tr {
+	padding: 0;
+	margin: 0;
+}
+.report_stmt_col_h_td {
+	border-top-width: 1px;
+	border-top-color: #ccc;
+	border-top-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #ccc;
+	border-bottom-style: solid;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-right: 4px;
+}
+.report_stmt_col_h_td_date {
+	border-top-width: 1px;
+	border-top-color: #ccc;
+	border-top-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #ccc;
+	border-bottom-style: solid;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-right: 4px;
+	text-align: right;
+}
+.report_col_h_td {
+	border-top-width: 1px;
+	border-top-color: #ccc;
+	border-top-style: solid;
+	text-align: right;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.report_stmt_col_td {
+	border-top-width: 1px;
+	border-top-color: #ccc;
+	border-top-style: solid;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 12px;
+	font-weight: normal;
+}
+.report_stmt_col_td_t {
+	border-top-width: 2px;
+	border-top-color: #ccc;
+	border-top-style: solid;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 0px;
+}
+.report_col_td {
+	border-top-width: 1px;
+	border-top-color: #ccc;
+	border-top-style: solid;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-right: 4px;
+	text-align: right;
+}
+.report_stmt_col_total_tr {
+}
+.report_col_total_tr {
+}
+.report_stmt_col_total_td {
+	border-top-width: 2px;
+	border-top-color: #ccc;
+	border-top-style: solid;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+.report_col_total_td {
+	border-top-width: 2px;
+	border-top-color: #ccc;
+	border-top-style: solid;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-right: 4px;
+	text-align: right;
+}
+.order_section {
+	font-size: 10px;
+	padding-top: 0pt;
+	padding-bottom: 0pt;
+}
+.r_table_td_long {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 4px;
+	word-wrap: break-word;
+}
+</style>
+<script type="text/javascript">function gotoPage(url){	window.location.href=url;}</script>
+</head>
+<body>
+<input type="hidden" id="g_baseUrl" value="/jerp/">
+</input>
+<div id="root" align="center">
+  <div id="printRoot" align="left">
+    <div id="pcBody" align="left">
+      <div align="left" class="r_section"> </div>
+      <div align="left" class="r_section">
+        <table class="r_layout_table">
+          <tr class="r_layout_tr">
+            <td class="r_layout_td_stmt"><div class="report_stmt_col">
+                <table class="report_stmt_col_table">
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_h_td" id="l_date">日</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_h_td">主营收入</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td"> 销售收入</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td">其他营业收入</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td_t">主营收入 总额</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_h_td">主营成本</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td">销售成本</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td">销售其他成本</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td_t">主营成本 总额</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_h_td">主营开支</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td">劳务成本</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td">其他营业支出</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td">营业税金及附加</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td_t">主营开支 总额</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_h_td">非主营收入</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td">利息收入</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td">出售固定资产收入</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td">投资收益</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td">营业外收入</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td_t">非主营收入 总额</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_h_td">非主营开支</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td">利息支出</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td">保险费用</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td">销售费用</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td">管理费用</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td">财务费用</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td">其它费用</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td">所得税费用</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td_t">非主营开支 总额 </td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_h_td">利润 </td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td">营业利润</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td">利润总额</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td">净利润</td>
+                  </tr>
+                  <tr class="report_stmt_col_tr">
+                    <td class="report_stmt_col_td">毛利</td>
+                  </tr>
+                </table>
+                <input type="hidden" id="income_stmtIdList" value="3964,3996,3958,3997,3998,3999,4000,4001,4002,4003,3966,4004,4005,4006,4007,4008,4009,4010,4011,4012,4013,4014" />
+              </div></td>
+            <td  class="r_layout_td_stmt_data"><div class="report_col">
+                <table class="report_col_table">
+                  <tr class="report_stmt_tr">
+                    <td class="report_stmt_col_h_td_date"> 2016-04-01 														      ~														      2016-04-25 </td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_stmt_col_h_td">&nbsp;&nbsp;</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_col_td">1450.00</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_col_td">0.00</td>
+                  </tr>
+                  <tr class="report_col_total_tr">
+                    <td class="report_col_total_td">1450.00</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_stmt_col_h_td">&nbsp;&nbsp;</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_col_td">398.00</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_col_td">0.00</td>
+                  </tr>
+                  <tr class="report_col_total_tr">
+                    <td class="report_col_total_td">398.00</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_stmt_col_h_td">&nbsp;&nbsp;</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_col_td">0.00</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_col_td">0.00</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_col_td">0.00</td>
+                  </tr>
+                  <tr class="report_col_total_tr">
+                    <td class="report_col_total_td">0.00</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_stmt_col_h_td">&nbsp;&nbsp;</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_col_td">0.00</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_col_td">0.00</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_col_td">0.00</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_col_td">0.00</td>
+                  </tr>
+                  <tr class="report_col_total_tr">
+                    <td class="report_col_total_td">0.00</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_stmt_col_h_td">&nbsp;&nbsp;</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_col_td">0.00</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_col_td">0.00</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_col_td">0.00</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_col_td">0.00</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_col_td">0.00</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_col_td">0.00</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_col_td">0.00</td>
+                  </tr>
+                  <tr class="report_col_total_tr">
+                    <td class="report_col_total_td">0.00</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_stmt_col_h_td">&nbsp;&nbsp;</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_col_td">1052.00</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_col_td">1052.00</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_col_td">1052.00</td>
+                  </tr>
+                  <tr class="report_col_tr">
+                    <td class="report_col_td">1052.00</td>
+                  </tr>
+                </table>
+              </div></td>
+          </tr>
+        </table>
+      </div>
+      <div align="left" class="r_section"> </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
